@@ -1,0 +1,12 @@
+.container1{
+  width: 325px;
+  margin:auto;
+  margin-top:80px;
+}
+.top-container img{
+  width:325px;
+}
+body{
+  background: url('/images/pattern-background-mobile.svg') no-repeat  center/cover;
+  background-color:hsl(225, 100%, 94%) ;
+}

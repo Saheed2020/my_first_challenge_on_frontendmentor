@@ -6,6 +6,9 @@
 }
 /* Reset */
 body{
+  display: grid;
+  place-content: center;
+  height:100vh;
   font-family:'Red Hat Display', sans-serif;
   background: url('/images/pattern-background-desktop.svg') no-repeat center right/cover;
   background-color: hsl(225, 100%, 94%);
@@ -18,7 +21,7 @@ body{
   padding:.7rem 2rem;
   margin-top: 1rem;
   color:white;
-  width: 80%;
+  width: 100%;
   box-shadow: 0 10px 20px hsl(223, 47%, 82%);
 }
 .min-text{
@@ -29,7 +32,7 @@ body{
   font-size: .9rem;
   text-decoration: none;
   padding: 0 1.5rem;
-  margin-bottom: 1rem;
+
 }
 /* Link styles */
 
@@ -39,9 +42,6 @@ body{
 }
 /* Container style */
 .container1{
-  position: relative;
-  left:0px;
-  top:50px;
   width:350px;
   height:520px;
   background: #fff;
@@ -50,8 +50,8 @@ body{
   margin: auto;
 }
 .bottom-container{
-  margin-top: 1rem;
   text-align: center;
+  padding:2rem;
 }
 .bottom-container p{
   margin-top: 1rem;
@@ -63,25 +63,24 @@ body{
  border-top-right-radius: 20px;
 }
 .bottom-container .check-out{
-  display: grid;
-  grid-template-columns: 5fr 2fr;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
   margin-top:1rem;
   background: hsl(225, 100%, 98%);
   border-radius: 10px;
-  margin:.5rem 2rem;
+  padding:0 1rem;
   }
   .bottom-container .check-out .check-layout{
-    display: grid;
-    grid-template-columns: 1fr 2fr;
+    display: flex;
     align-items: center;
   }
-  .bottom-container .check-out .check-layout img{
-    margin: 1rem;
+  .bottom-container .check-layout img{
+    margin: 1rem 0.5rem;
   }
   .bottom-container>a{
     display: block;
-    margin-top: 1.5rem;
+    margin-top: 1rem;
     font-size: .75rem;
     text-decoration: none;
     font-weight: 600;
@@ -94,7 +93,7 @@ body{
   }
   #annual{
     line-height: .5;
-    margin-right:2rem
+    
   }
   .bottom-container button:hover{
     background: hsl(245, 75%, 64%);
